@@ -1,0 +1,506 @@
+/***************************************General Fonts***************************************/
+/* Headers Fonts */
+@font-face {
+  font-family: "Arvo-bold";
+  src: url(../webfonts/Arvo-Bold.woff) format(woff),
+    url(../webfonts/Arvo-Bold.woff2) format(woff2),
+    url(../webfonts/Arvo-Bold.ttf) format(ttf);
+}
+@font-face {
+  font-family: "Arvo-regular";
+  src: url(../webfonts/Arvo.woff) format(woff),
+    url(../webfonts/Arvo.woff2) format(woff2),
+    url(../webfonts/Arvo-Regular.ttf) format(ttf);
+  font-weight: normal;
+}
+/* Span Font */
+@font-face {
+  font-family: "Mont-bold";
+  src: url(../webfonts/Montserrat-Bold.woff) format(woff),
+    url(../webfonts/Montserrat-Bold.woff2) format(woff2),
+    url(../webfonts/Montserrat-Bold.ttf) format(ttf);
+}
+/* General Fonts */
+@font-face {
+  font-family: "OpenSans-bold";
+  src: url(../webfonts/OpenSans-Bold.woff) format(woff),
+    url(../webfonts/OpenSans-Bold.woff2) format(woff2),
+    url(../webfonts/OpenSans-Bold.ttf) format(ttf);
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(../webfonts/OpenSans-Regular.woff) format(woff),
+    url(../webfonts/OpenSans-Regular.woff2) format(woff2),
+    url(../webfonts/OpenSans-Regular.ttf) format(ttf);
+}
+/***************************************Variables***************************************/
+:root {
+  --span-color: RGB(159, 163, 167);
+  --span-font-size: 0.75rem;
+  --paragraph-color: RGB(159, 163, 167);
+  --paragraph-font-size: 0.875rem;
+}
+/***************************************General Styles***************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Arvo-regular";
+  padding: 0;
+}
+span {
+  font-family: "Mont-bold";
+  font-size: var(--span-font-size);
+  color: var(--span-color);
+  padding: 0;
+  letter-spacing: 0.125rem;
+}
+p {
+  font-size: var(--paragraph-font-size);
+  color: var(--paragraph-color);
+  font-family: "OpenSans-Regular";
+  padding: 0;
+}
+.text-center {
+  text-align: center;
+}
+/***************************************Layout Styles***************************************/
+main section.layout {
+  /* background-color: tan; */
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/***************************************Iphone Section Styles***************************************/
+section.iphone {
+  grid-row: 2 / 3;
+  background-color: white;
+  padding-top: 2.5rem;
+  padding-inline: 4%;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+}
+section.iphone article.iphone-article {
+  /* background-color: brown; */
+  width: 90%;
+  min-width: 110.958px;
+}
+section.iphone article.iphone-article span {
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+section.iphone article.iphone-article h1 {
+  margin-block: 0.625rem 1.25rem;
+  color: RGB(51, 51, 51);
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+section.iphone article.iphone-article p {
+  align-self: flex-start;
+  line-height: 1.625rem;
+}
+section.iphone figure.iphone-image {
+  /* background-color: blue; */
+  width: 90%;
+  min-width: 110.958px;
+}
+section.iphone figure.iphone-image img {
+  width: 100%;
+  max-width: 249px;
+  display: block;
+  margin-top: 2.5rem;
+  margin-inline: auto;
+  transform: translateX(-10%);
+}
+/***************************************Rotary Evaporator Section Styles***************************************/
+section.rotary-evaporator {
+  grid-row: 1 / 2;
+  padding-block: 3.125rem;
+  background-color: rgb(247, 248, 249);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+section.rotary-evaporator h2 {
+  margin-block: 1.25rem 0.625rem;
+  color: RGB(51, 51, 51);
+  font-size: 10vw;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 550px;
+}
+section.rotary-evaporator a {
+  color: RGB(39, 185, 194);
+  font-family: "OpenSans-Regular";
+  font-size: 14px;
+}
+/***************************************Keyboard Section Styles***************************************/
+section.keyboard {
+  padding-block: 2.5rem;
+  background-color: rgb(240, 86, 56);
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+section.keyboard section.keyword-image {
+  width: 100%;
+}
+section.keyboard figure.keyword-image img {
+  width: 100%;
+  max-width: 319px;
+  display: block;
+}
+section.keyboard h2 {
+  max-width: 290px;
+  color: RGB(255, 251, 251);
+  font-family: "Arvo-Bold";
+  font-size: 1.375rem;
+  line-height: 1.5;
+}
+section.keyboard a {
+  color: RGB(255, 200, 10);
+  text-decoration: none;
+  font-family: "OpenSans-Regular";
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  margin-top: 1.25rem;
+}
+section.keyboard a span {
+  color: RGB(255, 200, 10);
+  font-family: "OpenSans-Regular";
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+/***************************************Macintosh Section Styles***************************************/
+section.macintosh {
+  /* background-color: blueviolet; */
+  grid-row: 5 / 6;
+  padding: 4.25rem 3.125rem;
+  padding-inline: 4%;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+section.macintosh header.macintosh-header {
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  justify-content: center;
+}
+section.macintosh header.macintosh-header span {
+  font-weight: 700;
+  align-self: flex-start;
+}
+section.macintosh header.macintosh-header h2 {
+  font-size: 1.375rem;
+  font-weight: 400;
+  margin-top: 0.625rem;
+  line-height: 1.5;
+}
+section.macintosh header.macintosh-header figure.macintosh-image {
+  width: 100%;
+  margin-block: 2.5rem 2.125rem;
+}
+section.macintosh header.macintosh-header figure.macintosh-image img {
+  width: 200%;
+  display: block;
+  transform: translateX(-57%);
+}
+section.macintosh article.macintosh-content p {
+  line-height: 2;
+}
+section.macintosh article.macintosh-content a {
+  color: RGB(39, 185, 194);
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  text-decoration: none;
+  font-size: 0.75rem;
+  margin-top: 1.25rem;
+  display: block;
+}
+section.macintosh article.macintosh-content a span {
+  color: RGB(39, 185, 194);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+}
+/***************************************Floppy Disk Section Styles***************************************/
+section.floppy-disk {
+  grid-row: 8 / 9;
+  background-color: rgb(143, 118, 188);
+  padding-block: 1.875rem 4.375rem;
+  padding-inline: 1.3125rem;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+section.floppy-disk figure.floppy-disk-image {
+  background-color: rgb(129, 102, 176);
+  width: 373px;
+  height: 373px;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+section.floppy-disk figure.floppy-disk-image span:first-child {
+  display: block;
+  color: white;
+  font-size: 0.625rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding-block: 0.125rem 0.0625rem;
+  padding-inline: 0.8125rem;
+  line-height: 2.3;
+}
+section.floppy-disk figure.floppy-disk-image span:first-child i {
+  color: rgb(255, 200, 10);
+}
+section.floppy-disk figure.floppy-disk-image span:last-child {
+  color: white;
+}
+section.floppy-disk figure.floppy-disk-image img {
+  width: 65%;
+  display: block;
+  margin-top: 1.25rem;
+}
+section.floppy-disk article.floppy-disk-content {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+}
+section.floppy-disk article.floppy-disk-content h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Arvo-Bold";
+  margin-block: 0.625rem 1.25rem;
+}
+section.floppy-disk article.floppy-disk-content p {
+  width: 80%;
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.86;
+}
+section.floppy-disk article.floppy-disk-content a {
+  color: black;
+  font-size: 0.75rem;
+  text-decoration: none;
+  font-family: "OpenSans-Bold";
+  line-height: 2.17;
+  background-color: rgb(255, 200, 10);
+  margin-top: 1.875rem;
+  padding: 0.875rem 1.75rem;
+  letter-spacing: 0.125rem;
+  border-radius: 1.75rem;
+}
+/***************************************Controller Section Styles***************************************/
+section.controller {
+  grid-row: 4 / 5;
+  background-color: rgb(247, 248, 249);
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 1.875rem;
+}
+section.controller figure.controller-image {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+}
+section.controller figure.controller-image img {
+  width: 100%;
+  display: block;
+  max-width: 248px;
+  transform: translateX(-10%);
+}
+section.controller figure.controller-image figcaption {
+  margin-block: 0.625rem 1.25rem;
+  font-size: 1.375rem;
+  font-family: "Arvo-Regular";
+  line-height: 1.5;
+  width: 54%;
+}
+section.controller a {
+  color: RGB(39, 185, 194);
+  text-decoration: none;
+  font-family: "OpenSans-Regular";
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  margin-top: 1.25rem;
+  line-height: 1.75;
+}
+section.controller a span {
+  color: RGB(39, 185, 194);
+  font-family: "OpenSans-Regular";
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+/***************************************Ipad Section Styles***************************************/
+section.ipad {
+  grid-row: 7 / 8;
+  background-color: rgb(147, 182, 183);
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.875rem;
+  background-image: url(../images/UX.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 80%;
+}
+section.ipad article.ipad-content {
+  height: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+section.ipad article.ipad-content span {
+  display: block;
+  padding-inline: 0.625rem;
+  background-color: RGB(250, 104, 79);
+  color: white;
+  font-size: 0.5rem;
+  font-family: "OpenSans-Bold";
+  line-height: 2.5;
+  border-radius: 0.3125rem;
+  align-self: flex-start;
+  position: relative;
+  left: 1.875rem;
+}
+section.ipad article.ipad-content h2 {
+  max-width: 280px;
+  color: white;
+  font-size: 1.375rem;
+  font-family: "Arvo-Bold";
+  padding-block: 1.9375rem;
+  margin-inline: auto;
+}
+section.ipad article.ipad-content figure.ipad-image img {
+  width: 90%;
+  display: block;
+  transform: translateX(-8%);
+}
+/***************************************Twitter Section Styles***************************************/
+section.twitter {
+  grid-row: 6 / 7;
+  background-color: rgb(56, 213, 244);
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+section.twitter figure.twitter-logo {
+  background-color: rgb(53, 207, 237);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding-inline: 2.125rem;
+  height: 240px;
+}
+section.twitter figure.twitter-logo img {
+  width: 43.5px;
+  height: 34px;
+  display: block;
+}
+section.twitter figure.twitter-logo figcaption {
+  color: white;
+  max-width: 172px;
+  font-family: "Arvo-Regular";
+  font-size: 22px;
+  margin-block: 0.625rem 1.25rem;
+  line-height: 1.5;
+}
+/***************************************Popular Section Styles***************************************/
+section.popular {
+  background-color: rgb(247, 248, 249);
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 1.875rem;
+}
+section.popular article.popular-content {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+}
+section.popular article.popular-content span {
+  display: block;
+  padding-inline: 0.625rem;
+  background-color: rgb(123, 196, 36);
+  color: white;
+  font-size: 0.5rem;
+  font-family: "OpenSans-Bold";
+  line-height: 2.5;
+  border-radius: 0.3125rem;
+}
+section.popular article.popular-content h2 {
+  width: 70%;
+  color: RGB(51, 51, 51);
+  font-size: 1.375rem;
+  font-family: "Arvo-Regular";
+  font-weight: 400;
+  margin-block: 0.625rem 1.25rem;
+}
+/***************************************Tv Section Styles***************************************/
+section.tv {
+  background-color: rgb(44, 44, 44);
+  padding-bottom: 1.875rem;
+  padding-inline: 5%;
+}
+section.tv figure.tv-image {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+section.tv figure.tv-image img {
+  width: 100%;
+  max-width: 271px;
+  display: block;
+  transform: translateX(-20%);
+}
+section.tv figure.tv-image figcaption {
+  width: 34%;
+  margin-block: 0.625rem 1.25rem;
+  font-family: "Arvo-Regular";
+  font-size: 1.375rem;
+  color: white;
+  transform: translateY(-45%);
+  text-align: center;
+  line-height: 1.5;
+}
