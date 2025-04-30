@@ -146,6 +146,7 @@
   }
   section.tv figure.tv-image figcaption {
     text-align: left;
+    width: 32%;
     transform: translateY(0);
   }
 }
