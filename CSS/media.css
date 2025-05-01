@@ -205,14 +205,17 @@
     padding-top: 0;
     flex-flow: row nowrap;
     justify-content: space-around;
+    transform: translateY(10px);
   }
   section.iphone article.iphone-article {
     width: 32%;
+    transform: translateX(25px);
   }
   section.iphone figure.iphone-image {
     width: 60%;
     display: flex;
     justify-content: flex-end;
+    transform: translateX(-25px);
   }
   section.iphone figure.iphone-image img {
     margin-inline: 0;
@@ -243,11 +246,14 @@
     width: 100%;
     margin-block: 1.25rem 0;
   }
+  section.macintosh header.macintosh-header {
+    transform: translateX(12px);
+  }
   section.macintosh header.macintosh-header h2 {
     margin-bottom: 1.5rem;
   }
   section.macintosh header.macintosh-header figure.macintosh-image img {
-    width: 245%;
+    width: 200%;
     transform: translate(-64%, 9px);
   }
   /* Twitter Section */

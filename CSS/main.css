@@ -5,13 +5,18 @@
   src: url(../webfonts/Arvo-Bold.woff) format(woff),
     url(../webfonts/Arvo-Bold.woff2) format(woff2),
     url(../webfonts/Arvo-Bold.ttf) format(ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Arvo-regular";
   src: url(../webfonts/Arvo.woff) format(woff),
     url(../webfonts/Arvo.woff2) format(woff2),
     url(../webfonts/Arvo-Regular.ttf) format(ttf);
-  font-weight: normal;
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 /* Span Font */
 @font-face {
@@ -19,6 +24,9 @@
   src: url(../webfonts/Montserrat-Bold.woff) format(woff),
     url(../webfonts/Montserrat-Bold.woff2) format(woff2),
     url(../webfonts/Montserrat-Bold.ttf) format(ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 /* General Fonts */
 @font-face {
@@ -26,12 +34,18 @@
   src: url(../webfonts/OpenSans-Bold.woff) format(woff),
     url(../webfonts/OpenSans-Bold.woff2) format(woff2),
     url(../webfonts/OpenSans-Bold.ttf) format(ttf);
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "OpenSans-Regular";
   src: url(../webfonts/OpenSans-Regular.woff) format(woff),
     url(../webfonts/OpenSans-Regular.woff2) format(woff2),
     url(../webfonts/OpenSans-Regular.ttf) format(ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 /***************************************Variables***************************************/
 :root {
@@ -415,7 +429,7 @@ section.twitter {
   grid-row: 6 / 7;
   background-color: rgb(56, 213, 244);
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: nowrap column;
   justify-content: center;
   align-items: center;
 }
@@ -446,7 +460,7 @@ section.twitter figure.twitter-logo figcaption {
 section.popular {
   background-color: rgb(247, 248, 249);
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: nowrap column;
   align-items: center;
   justify-content: center;
   padding-block: 1.875rem;
@@ -484,7 +498,7 @@ section.tv {
 }
 section.tv figure.tv-image {
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: nowrap column;
   justify-content: center;
   align-items: center;
 }
